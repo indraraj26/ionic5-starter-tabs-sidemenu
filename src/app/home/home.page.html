@@ -7,8 +7,29 @@
 </ion-header>
 
 <ion-content>
+  <ion-button routerLink="/form-select">Go to Form</ion-button>
+  <ion-fab vertical="top" horizontal="end" edge slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <div class="ion-padding" *ngFor="let user of userList">
     {{ user.name }}
   </div>
   <ion-button color="primary" (click)="openPicker()">Open Picker</ion-button>
+  <ion-progress-bar color="primary" value="0.2"></ion-progress-bar>
+  <ion-chip>
+    <ion-avatar>
+      <img
+        src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+      />
+    </ion-avatar>
+    <ion-label>Avatar Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip color="secondary">
+    <ion-icon name="home" color="primary"></ion-icon>
+    <ion-label style="color:red">Default</ion-label>
+    <ion-icon name="close" color="primary"></ion-icon>
+  </ion-chip>
 </ion-content>

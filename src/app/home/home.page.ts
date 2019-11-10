@@ -11,7 +11,7 @@ import { PickerColumn } from '@ionic/core/dist/types/components/picker/picker-in
 export class HomePage {
   public userList: any[] = [];
   public test: PickerColumn[] = [
-    {
+    /*   {
       name: 'indra',
       options: [
         {
@@ -39,7 +39,7 @@ export class HomePage {
           value: 6,
         },
       ],
-    },
+    }, */
     {
       name: 'Alexa',
       options: [

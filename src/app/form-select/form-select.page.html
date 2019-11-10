@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>form-select</ion-title>
+  </ion-toolbar>
+</ion-header>
+<style>
+  div {
+    color: red;
+  }
+</style>
+<ion-content>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <ion-item lines="none">
+      <ion-label>First Name</ion-label>
+      <ion-input
+        formControlName="first_name"
+        placeholder="First Name"
+      ></ion-input>
+    </ion-item>
+    <div
+      *ngIf="
+        (myForm.get('first_name').touched &&
+          myForm.get('first_name').hasError('required')) ||
+        (myForm.get('first_name').invalid && submitted)
+      "
+    >
+      First Name is required
+    </div>
+    <ion-item lines="none">
+      <ion-label>Last Name</ion-label>
+      <ion-input
+        formControlName="last_name"
+        placeholder="Last Name"
+      ></ion-input>
+    </ion-item>
+    <div
+      *ngIf="
+        (myForm.get('last_name').touched &&
+          myForm.get('last_name').hasError('required')) ||
+        (myForm.get('last_name').invalid && submitted)
+      "
+    >
+      Last Name is required
+    </div>
+    <ion-item lines="none">
+      <ion-label>Hobbies</ion-label>
+      <ion-select
+        placeholder="Select One"
+        formControlName="select_single_hobby"
+      >
+        <ion-select-option value="cricket">Cricket</ion-select-option>
+        <ion-select-option value="basketball">BasketBall</ion-select-option>
+        <ion-select-option value="football">Football</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <div
+      *ngIf="
+        (myForm.get('select_single_hobby').touched &&
+          myForm.get('select_single_hobby').hasError('required')) ||
+        (myForm.get('select_single_hobby').invalid && submitted)
+      "
+    >
+      Single Hobby is required
+    </div>
+    <ion-item lines="none">
+      <ion-label>Mul Hobbies</ion-label>
+      <ion-select
+        placeholder="Select Multiple"
+        formControlName="select_mul_hobby"
+        multiple="true"
+      >
+        <ion-select-option value="cricket">Cricket</ion-select-option>
+        <ion-select-option value="basketball">BasketBall</ion-select-option>
+        <ion-select-option value="football">Football</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <div
+      *ngIf="
+        (myForm.get('select_mul_hobby').touched &&
+          myForm.get('select_mul_hobby').hasError('required')) ||
+        (myForm.get('select_mul_hobby').invalid && submitted)
+      "
+    >
+      Mul Hobby is required
+    </div>
+  </form>
+  <pre>{{ myForm?.value | json }}</pre>
+</ion-content>
