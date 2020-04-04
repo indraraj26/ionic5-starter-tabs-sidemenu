@@ -1,7 +1,6 @@
 import { ModalPage } from "./../../modal/modal.page";
 import { Component, OnInit } from "@angular/core";
 import { IonRouterOutlet, ModalController } from "@ionic/angular";
-
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.page.html",
@@ -20,7 +19,7 @@ export class DashboardPage implements OnInit {
       component: ModalPage,
       swipeToClose: true,
       animated: true,
-      presentingElement: this.routerOutlet.nativeEl // Get the top-most ion-modal
+      enterAnimation: (this.routerOutlet.parentOutlet, )
     });
     return await modal.present();
   }
