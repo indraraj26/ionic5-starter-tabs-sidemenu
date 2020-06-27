@@ -1,0 +1,22 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>home</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-button
+		class="ion-margin-bottom"
+		expand="full"
+		color="primary"
+		[appIonCamera]="config"
+		(cameraResult)="onCameraResult($event)"
+		>Open camera through directive</ion-button
+	>
+	<ion-button
+		expand="full"
+		color="primary"
+		(click)="openCameraThroughService()"
+		>Open camera through Service</ion-button
+	>
+</ion-content>
