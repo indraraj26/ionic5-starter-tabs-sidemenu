@@ -1,5 +1,7 @@
 {
   "name": "ionic5-tabs-sidemenu",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
