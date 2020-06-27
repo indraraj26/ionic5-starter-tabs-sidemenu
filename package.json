@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
-    "@indraraj26/ion-camera": "0.0.4",
+    "@indraraj26/ion-camera": "0.0.5",
     "@ionic-native/camera": "^5.27.0",
     "@ionic-native/core": "^5.18.0",
     "@ionic-native/ionic-webview": "^5.27.0",

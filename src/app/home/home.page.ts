@@ -14,7 +14,6 @@ export class HomePage {
 		encodingType: this._camera.EncodingType.JPEG,
 		mediaType: this._camera.MediaType.PICTURE,
 		sourceType: this._camera.PictureSourceType.CAMERA,
-		outputType: 'blob',
 	};
 
 	constructor(
