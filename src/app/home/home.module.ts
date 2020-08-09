@@ -8,18 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 
-import { IonCameraModule } from '@indraraj26/ion-camera';
-import { Camera } from '@ionic-native/camera/ngx';
-
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		IonicModule,
-		HomePageRoutingModule,
-		IonCameraModule,
-	],
+	imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
 	declarations: [HomePage],
-	providers: [Camera],
 })
 export class HomePageModule {}

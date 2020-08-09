@@ -5,19 +5,13 @@
 </ion-header>
 
 <ion-content>
-	<ion-button
-		class="ion-margin-bottom"
-		expand="full"
-		color="primary"
-		[appIonCamera]="config"
-		(cameraResult)="onCameraResult($event)"
-		>Open camera through directive</ion-button
-	>
-	<ion-button
-		expand="full"
-		color="primary"
-		(click)="openCameraThroughService()"
-		>Open camera through Service</ion-button
-	>
-	<img [src]="showImage" height="200" width="200">
+	<ion-input placeholder="Input placeholder" class="first-name"></ion-input>
+	<ion-searchbar
+		placeholder="Searchbar placeholder"
+		class="search-foo"
+	></ion-searchbar>
+	<ion-textarea
+		placeholder="Textarea placeholder"
+		class="enter-chat"
+	></ion-textarea>
 </ion-content>

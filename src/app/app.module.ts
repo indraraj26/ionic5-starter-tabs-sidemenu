@@ -8,19 +8,13 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { IonCameraModule } from '@indraraj26/ion-camera';
 import { Camera } from '@ionic-native/camera/ngx';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 
 @NgModule({
 	declarations: [AppComponent],
 	entryComponents: [],
-	imports: [
-		BrowserModule,
-		IonicModule.forRoot(),
-		AppRoutingModule,
-		IonCameraModule.forRoot(),
-	],
+	imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
 	providers: [
 		StatusBar,
 		SplashScreen,
