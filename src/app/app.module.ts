@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Camera } from '@ionic-native/camera/ngx';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
+import { Diagnostic } from '@ionic-native/diagnostic/ngx';
 
 @NgModule({
 	declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { WebView } from '@ionic-native/ionic-webview/ngx';
 		SplashScreen,
 		Camera,
 		WebView,
+		Diagnostic,
 		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
 	],
 	bootstrap: [AppComponent],
