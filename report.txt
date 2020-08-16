@@ -97,7 +97,7 @@ chunk {swipe-back-a7a3641e-js} swipe-back-a7a3641e-js.js, swipe-back-a7a3641e-js
 chunk {swiper-bundle-f564f87c-js} swiper-bundle-f564f87c-js.js, swiper-bundle-f564f87c-js.js.map (swiper-bundle-f564f87c-js) 233 kB  [rendered]
 chunk {tap-click-8339ee48-js} tap-click-8339ee48-js.js, tap-click-8339ee48-js.js.map (tap-click-8339ee48-js) 6.32 kB  [rendered]
 chunk {vendor} vendor.js, vendor.js.map (vendor) 4.97 MB [initial] [rendered]
-Date: 2020-08-13T10:07:02.237Z - Hash: 2128ec97c368fdc9be6b - Time: 20874ms
+Date: 2020-08-16T10:26:16.454Z - Hash: 2128ec97c368fdc9be6b - Time: 21682ms
 > cordova.cmd build android --verbose
 No scripts found for hook "before_build".
 No scripts found for hook "before_prepare".
@@ -1572,7 +1572,7 @@ Updating splash screens at platforms\android\app\src\main\res
 Updating resource files at platforms\android
 Prepared android project successfully
 Executing script found in plugin cordova-plugin-androidx-adapter for hook "after_prepare": plugins\cordova-plugin-androidx-adapter\apply.js
-cordova-plugin-androidx-adapter: Processed 29 source files in 649ms
+cordova-plugin-androidx-adapter: Processed 29 source files in 673ms
 Executing script found in plugin cordova-plugin-androidx for hook "after_prepare": plugins\cordova-plugin-androidx\scripts\apply-to-gradle.properties.js
 cordova-plugin-androidx: Updated gradle.properties to enable AndroidX
 No scripts found for hook "before_compile".
@@ -1650,7 +1650,7 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 10s
+BUILD SUCCESSFUL in 15s
 40 actionable tasks: 40 up-to-date
 Built the following apk(s): 
 	D:\ionic\ionic5-starter-tabs-sidemenu\platforms\android\app\build\outputs\apk\debug\app-debug.apk
