@@ -1,0 +1,46 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>home</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+	<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+		<!-- <div>test</div> -->
+		<!-- if you uncomment above it will not translate value -->
+		<ion-row>
+			<ion-col>
+				<ion-item>
+					<ion-label position="stacked" class="phone-label"
+						>your phone no.</ion-label
+					>
+					<ion-input
+						[(ngModel)]="loginDetails.phone_no"
+						#phoneNo="ngModel"
+						name="phone_no"
+						class="phone-no-input"
+					></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-text>VS</ion-text>
+		</ion-row>
+		<ion-row>
+			<ion-text>Without Ion-item</ion-text>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<ion-label position="stacked" class="phone-label"
+					>your phone no.</ion-label
+				>
+				<ion-input
+					[(ngModel)]="loginDetails.phone_no"
+					#phoneNo="ngModel"
+					name="phone_no"
+					class="phone-no-input"
+				></ion-input>
+			</ion-col>
+		</ion-row>
+	</form>
+</ion-content>
