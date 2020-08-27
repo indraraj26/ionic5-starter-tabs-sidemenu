@@ -1,3 +1,14 @@
 <ion-app>
-	<ion-router-outlet></ion-router-outlet>
+	<ion-split-pane contentId="main-content">
+		<ion-menu contentId="main-content" type="overlay" class="my-custom-menu" menuId="mainMenuId">
+			<ion-content>
+				<ion-list>
+					<ion-item>
+						<ion-label>My Menu</ion-label>
+					</ion-item>
+				</ion-list>
+			</ion-content>
+		</ion-menu>
+		<ion-router-outlet id="main-content"></ion-router-outlet>
+	</ion-split-pane>
 </ion-app>
