@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 import { Platform, NavController, IonRouterOutlet } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -12,13 +12,13 @@ import { AppMinimize } from '@ionic-native/app-minimize/ngx';
 	styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+	@ViewChild(IonRouterOutlet, { static: true }) _ionRouterOutlet: IonRouterOutlet;
 	constructor(
 		private platform: Platform,
 		private splashScreen: SplashScreen,
 		private statusBar: StatusBar,
 		private _navController: NavController,
 		private _userDetailService: UserDetailService,
-		private _ionRouterOutlet: IonRouterOutlet,
 		private _app: AppMinimize,
 	) {
 		this.initializeApp();
