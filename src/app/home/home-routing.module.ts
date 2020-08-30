@@ -5,30 +5,28 @@ import { HomePage } from './home.page';
 import { ChildrenComponent } from './components/children/children.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: [
-      {
-        path: '',
-        component: HomePage
-      },
-      {
-        path: ':id',
-        component: ChildrenComponent
-      }, {
-        path: '**',
-        redirectTo: ''
-      }
-    ]
-  },
-  {
-    path: '**',
-    redirectTo: ''
-  }
+	{
+		path: '',
+		component: HomePage,
+		children: [
+			{
+				path: ':id',
+				component: ChildrenComponent,
+			},
+			{
+				path: '**',
+				redirectTo: '',
+			},
+		],
+	},
+	{
+		path: '**',
+		redirectTo: '',
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
-export class HomePageRoutingModule { }
+export class HomePageRoutingModule {}
