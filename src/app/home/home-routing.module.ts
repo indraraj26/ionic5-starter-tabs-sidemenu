@@ -7,8 +7,11 @@ import { ChildrenComponent } from './components/children/children.component';
 const routes: Routes = [
 	{
 		path: '',
-		component: HomePage,
 		children: [
+			{
+				path: '',
+				component: HomePage,
+			},
 			{
 				path: ':id',
 				component: ChildrenComponent,
