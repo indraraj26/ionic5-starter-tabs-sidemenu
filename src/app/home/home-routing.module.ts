@@ -3,12 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { ChildrenComponent } from './components/children/children.component';
+import { BlankComponent } from './components/blank/blank.component';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: HomePage,
+		component: BlankComponent,
 		children: [
+			{
+				path: '',
+				component: HomePage,
+			},
 			{
 				path: ':id',
 				component: ChildrenComponent,
