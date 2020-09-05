@@ -5,13 +5,7 @@
 </ion-header>
 
 <ion-content>
-	<ion-input placeholder="Input placeholder" class="first-name"></ion-input>
-	<ion-searchbar
-		placeholder="Searchbar placeholder"
-		class="search-foo"
-	></ion-searchbar>
-	<ion-textarea
-		placeholder="Textarea placeholder"
-		class="enter-chat"
-	></ion-textarea>
+	<form #formRegister="ngForm">
+		<ion-input (ionChange)="change($event)" placeholder="enter anything"></ion-input>
+	</form>
 </ion-content>
