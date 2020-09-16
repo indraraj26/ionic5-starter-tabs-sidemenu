@@ -1,9 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>Login</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="onLogin()">Login</ion-button>
+	<ion-textarea (keyup)="onKeyUp($event.which)"></ion-textarea>
+	<ion-textarea (keydown)="onKeyDown($event.which)"></ion-textarea>
+	<ion-textarea (keypress)="onKeyPress($event.which)"></ion-textarea>
+	<textarea (keypress)="onHtmlTextArea($event.which)"></textarea>
+	<ion-button (click)="onLogin()">Login</ion-button>
 </ion-content>
