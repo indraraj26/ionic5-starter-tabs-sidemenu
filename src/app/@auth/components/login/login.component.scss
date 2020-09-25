@@ -1,0 +1,84 @@
+$text-color: #1d1d1d;
+
+.continue-text {
+	--color: $text-color;
+	font-size: 14px;
+}
+
+.row-border {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.phone-no-input {
+	--color: $text-color;
+	--padding-start: 0px;
+}
+
+.col-btn-facebook {
+	padding-right: 10px;
+}
+
+.logo-google,
+.logo-facebook {
+	/* 	font-size: 20px;
+ */
+	padding-right: 10px;
+}
+
+.logo-google {
+	color: #fff;
+}
+
+.facebook-btn,
+.google-btn {
+	--padding-start: 0;
+	--padding-end: 0;
+	height: 33px;
+	text-transform: capitalize;
+	--box-shadow: none;
+	font-weight: 600;
+
+	&::part(native) {
+		padding-right: 14%;
+	}
+}
+
+.facebook-btn {
+	--background: #1c74f9;
+	--background-focused: #1c74f9;
+	--background-activated: #1c74f9;
+}
+
+.google-btn {
+	--background: #dedede;
+	--background-focused: #dedede;
+	--background-activated: #dedede;
+	--color: #f35959;
+	&::part(native) {
+		padding-right: 30%;
+	}
+}
+
+.row-continue {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.phone-label {
+	color: $text-color;
+	font-weight: 600;
+}
+
+.extension {
+	height: 38px;
+	border: none;
+	outline: none;
+	background: transparent;
+	width: 100%;
+	text-align: center;
+}
+
+.header-text {
+	font-weight: 700;
+}

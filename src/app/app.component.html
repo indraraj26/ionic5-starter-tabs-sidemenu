@@ -8,46 +8,6 @@
 		<ion-content>
 			<ion-list lines="none">
 				<ion-menu-toggle>
-					<ion-item
-						routerLink="/tabs/dashboard"
-						routerDirection="forward"
-					>
-						<ion-icon name="speedometer" slot="start"></ion-icon>
-						<ion-label>Dashboard</ion-label>
-					</ion-item>
-				</ion-menu-toggle>
-
-				<ion-menu-toggle>
-					<ion-item
-						routerLink="/tabs/trending"
-						routerDirection="forward"
-					>
-						<ion-icon name="trending-up" slot="start"></ion-icon>
-						<ion-label>Trending</ion-label>
-					</ion-item>
-				</ion-menu-toggle>
-
-				<ion-menu-toggle>
-					<ion-item routerLink="/tabs/map" routerDirection="forward">
-						<ion-icon name="map" slot="start"></ion-icon>
-						<ion-label>Map</ion-label>
-					</ion-item>
-				</ion-menu-toggle>
-
-				<ion-menu-toggle>
-					<ion-item
-						routerLink="/tabs/about"
-						routerDirection="forward"
-					>
-						<ion-icon
-							name="information-circle"
-							slot="start"
-						></ion-icon>
-						<ion-label>About us</ion-label>
-					</ion-item>
-				</ion-menu-toggle>
-
-				<ion-menu-toggle>
 					<ion-item (click)="onLogout()" button>
 						<ion-icon name="log-out" slot="start"></ion-icon>
 						<ion-label>Logout</ion-label>

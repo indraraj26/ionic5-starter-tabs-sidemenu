@@ -1,26 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AuthPage } from './auth.page';
+import { HomePageRoutingModule } from './home-routing.module';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: AuthPage
-  }
-];
+import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    HomePageRoutingModule
   ],
-  declarations: [AuthPage]
+  declarations: [HomePage]
 })
-export class AuthPageModule {}
+export class HomePageModule {}

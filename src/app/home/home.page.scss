@@ -1,0 +1,110 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	.map {
+		flex-grow: 1;
+		/* background-image: url('../../assets/img/google_img.png');
+		background-repeat: no-repeat;
+		background-position: right; */
+		/* 	background-size: 100% 100%;
+		background-position: center center; */
+	}
+	.header-home {
+		position: absolute;
+		top: 3%;
+		transform: translateY(-3%);
+		width: 100%;
+		padding: 0px 25px;
+		.user-hi-name {
+			font-size: 14px;
+			font-weight: 700;
+			margin-left: -10px;
+		}
+		ion-searchbar {
+			padding: 12px 0 0 0;
+			--background: #fff;
+			font-family: sans-serif;
+			--border-radius: 5px;
+    		opacity:1;
+    		pointer-events: all;
+		}
+		.menu-container {
+			display: inline-block;
+			background-color: #f12504;
+			padding: 5px 0px;
+			border-radius: 50%;
+			position: relative;
+			width: 35px;
+			height: 32px;
+			ion-icon {
+				width: 19px;
+				height: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.noti-container {
+			display: inline-block;
+			background-color: #f44613;
+			padding: 5px 0px;
+			border-radius: 50%;
+			position: relative;
+			width: 35px;
+			height: 32px;
+			ion-icon {
+				width: 19px;
+				height: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	.img-icon {
+		height: 30px;
+	}
+	.img-row {
+	}
+	.title-row {
+		margin-top: 5px;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.pickup-emergency-container {
+		// padding: 30px 10px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		.pickup-emergency-col {
+			padding: 30px 10px;
+		}
+	}
+
+	.footer-toolbar {
+		--background: linear-gradient(to right, #ee3b37, #ee4735, #f36921);
+	}
+
+	.btn-find-garage {
+		text-transform: capitalize;
+		--box-shadow: none;
+		font-size: 13px;
+		min-height: var(--min-height);
+		// font-weight: 600;
+		--background-focused: linear-gradient(
+			to right,
+			#f12504,
+			#f44613,
+			#f36921
+		);
+		--background-activated: linear-gradient(
+			to right,
+			#f12504,
+			#f44613,
+			#f36921
+		);
+		--background: linear-gradient(to right, #f12504, #f44613, #f36921);
+	}
+}
