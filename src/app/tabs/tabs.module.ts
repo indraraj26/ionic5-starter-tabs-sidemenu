@@ -49,14 +49,14 @@ const routes: Routes = [
         ],
       },
       {
-        path: '',
+        path: '**',
         redirectTo: '/tabs/dashboard',
         pathMatch: 'full',
       },
     ],
   },
   {
-    path: '',
+    path: '**',
     redirectTo: '/tabs/dashboard',
     pathMatch: 'full',
   },
