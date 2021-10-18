@@ -3,8 +3,13 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthguardGuard } from './services/authguard.guard';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/auth', pathMatch: 'full' },
-	{ path: 'auth', loadChildren: './auth/auth.module#AuthPageModule' },
+	// { path: '', redirectTo: '/auth', pathMatch: 'full' },
+	// { path: 'auth', loadChildren: './auth/auth.module#AuthPageModule' },
+	{
+		path: '',
+		pathMatch: 'full',
+		redirectTo: '/tabs'
+	},
 	{
 		path: 'tabs',
 		loadChildren: './tabs/tabs.module#TabsPageModule',
@@ -16,7 +21,7 @@ const routes: Routes = [
 	imports: [
 		RouterModule.forRoot(routes, {
 			preloadingStrategy: PreloadAllModules,
-			/*  enableTracing: true, */
+			 enableTracing: true,
 		}),
 	],
 	exports: [RouterModule],

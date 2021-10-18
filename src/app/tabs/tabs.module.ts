@@ -13,40 +13,24 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: '',
+        redirectTo: '/tabs/dashboard'
+      },
+      {
         path: 'dashboard',
-        children: [
-          {
-            path: '',
-            loadChildren: './dashboard/dashboard.module#DashboardPageModule',
-          },
-        ],
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule),
       },
       {
         path: 'trending',
-        children: [
-          {
-            path: '',
-            loadChildren: './trending/trending.module#TrendingPageModule',
-          },
-        ],
+        loadChildren: () => import('./trending/trending.module').then(m => m.TrendingPageModule),
       },
       {
         path: 'map',
-        children: [
-          {
-            path: '',
-            loadChildren: './map/map.module#MapPageModule',
-          },
-        ],
+        loadChildren: () => import('./map/map.module').then(m => m.MapPageModule),
       },
       {
         path: 'about',
-        children: [
-          {
-            path: '',
-            loadChildren: './about/about.module#AboutPageModule',
-          },
-        ],
+        loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule),
       },
       {
         path: '',
