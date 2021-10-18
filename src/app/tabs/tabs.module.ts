@@ -14,6 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        pathMatch: 'full',
         redirectTo: '/tabs/dashboard'
       },
       {
@@ -33,16 +34,14 @@ const routes: Routes = [
         loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule),
       },
       {
-        path: '',
+        path: '**',
         redirectTo: '/tabs/dashboard',
-        pathMatch: 'full',
       },
     ],
   },
   {
-    path: '',
+    path: '**',
     redirectTo: '/tabs/dashboard',
-    pathMatch: 'full',
   },
 ];
 
