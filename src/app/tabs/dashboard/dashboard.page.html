@@ -1,10 +1,12 @@
 <ion-header>
-	<ion-toolbar>
-		<ion-buttons slot="start">
-			<ion-menu-button></ion-menu-button>
-		</ion-buttons>
-		<ion-title>Dashboard</ion-title>
-	</ion-toolbar>
+	<ion-row>
+		<ion-col size="3" routerLink="./tab-one">one</ion-col>
+		<ion-col size="3" routerLink="./tab-two">two</ion-col>
+		<ion-col size="3" routerLink="./tab-three">three</ion-col>
+		<ion-col size="3" routerLink="./tab-four">four</ion-col>
+	</ion-row>
 </ion-header>
-
-<ion-content> </ion-content>
+<ion-content>
+	<ion-router-outlet id="sub-router-outlet"></ion-router-outlet>
+</ion-content>
+ 

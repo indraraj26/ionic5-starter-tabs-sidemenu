@@ -17,7 +17,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: './dashboard/dashboard.module#DashboardPageModule',
+            loadChildren: './dashboard/sub-tab.module#SubTabModule',
           },
         ],
       },
@@ -32,7 +32,7 @@ const routes: Routes = [
       },
       {
         path: 'map',
-        children: [
+        children: [ 
           {
             path: '',
             loadChildren: './map/map.module#MapPageModule',
